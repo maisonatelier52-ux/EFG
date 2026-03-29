@@ -1,0 +1,181 @@
+
+.leadership-body-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.leaders-section {
+    display: flex;
+    flex-direction: column;
+    gap: 35vh;
+}
+
+.leader-profile-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.leader-profile-section-grid.l {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leader-profile-section-grid.r {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+    /* vertical center */
+}
+
+.name-section {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+.name {
+    font-size: 29px;
+    font-weight: 400;
+    width: 55%;
+    margin: 0;
+    color: #ffffff;
+    font-family: "Libre Baskerville", serif;
+}
+
+.text.l {
+    font-size: 11px;
+    word-spacing: -0.07rem;
+}
+
+.profile-pic {
+    width: 301px;
+    margin-top: -50px;
+    height: 462px;
+    object-fit: contain;
+}
+.profile-pic.m{
+    display: none;
+}
+
+.profile-pic.b {
+    width: 255px;
+    margin-top: -50px;
+    height: 462px;
+}
+.profile-pic.b-m{
+display: none;
+ width: 255px;
+    margin-top: -50px;
+    height: 462px;
+}
+
+.profile-pic.c {
+    width: 305px;
+    margin-top: -50px;
+    height: 462px;
+}
+.profile-pic.c-m{
+    width: 305px;
+    margin-top: -50px;
+    height: 462px;
+    display: none;
+}
+
+.footer.l {
+    padding-top: 20vh
+}
+
+
+
+@media (max-width: 767px) {
+    .over-view-body {
+    width: 100%;
+    gap: 10vh;
+    padding: 3vh 10px;
+}
+.leadership-body-section {
+    gap: 5vh;
+    padding: 0px 20px;
+}
+.leaders-section {
+    gap: 5vh;
+}
+.leader-profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.leader-profile-section-grid.l {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.leader-profile-section-grid.r {
+    width: 100%;
+}
+.profile-pic {
+    margin-top: 0px;
+    display: none;
+}
+.profile-pic.b {
+    margin-top: 0px;
+    display: none;
+}
+.text.l {
+    font-size: 10px;
+    word-spacing: -0.07rem;
+}
+.profile-pic.c {
+    margin-top: 0px;
+    display: none;
+}
+.profile-pic.m{
+    display: inline;
+     margin-top: 0px;
+}
+.profile-pic.b-m{
+display: inline;
+     margin-top: 0px;
+}
+.profile-pic.c-m{
+    display: inline;
+     margin-top: 0px;
+}
+.footer.l {
+    padding-top: 5vh
+}
+.name-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+.name {
+    font-size: 24px;
+    width: 100%;
+}
+.name-section div{
+    width: 100%;
+}
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .leader-profile-section-grid.l {
+    width: 60%;
+}
+
+.leader-profile-section-grid.r {
+    width: 40%;
+}
+.leaders-section {
+    gap: 15vh;
+}
+}

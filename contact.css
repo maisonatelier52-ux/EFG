@@ -1,0 +1,222 @@
+.top-overview-section.b {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 55px;
+  width: 350px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0px;
+  padding-bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label {
+  font-size: 9px;
+  color: #ffffff;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+  font-size: 12px;
+  background-color: transparent;
+  outline: none;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+input:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: #ffffff;
+}
+
+input:invalid {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input:valid {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.submission-message {
+  color: #ffffff;
+  font-weight: 500;
+  text-align: right;
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 13px;
+}
+
+.text.h {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  color: #d7d7d7;
+  line-height: 1.4em;
+}
+
+.top-overview-section-grid.c {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 35%;
+}
+
+textarea {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px;
+  resize: vertical;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.3s ease;
+  height: 12vh;
+}
+
+textarea:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+textarea:invalid {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.enquiry {
+  padding-bottom: 15px;
+}
+
+/* ✅ Checkbox styling fix */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Works on modern browsers */
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #000;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.footer.c {
+  width: 100%;
+}
+
+/* Fallback for Safari / older browsers */
+@supports not (accent-color: #ffffff) {
+  .checkbox-label input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .checkbox-label input[type="checkbox"]:checked::after {
+    content: "✔";
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-overview-section-grid.c {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+    /* at least 16px to avoid zoom */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .top-overview-section-grid.c {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .top-overview-section-grid.c {
+    width: 100%;
+  }
+}

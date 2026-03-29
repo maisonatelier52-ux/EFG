@@ -1,0 +1,247 @@
+
+.over-view-body {
+    width: 82%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+    margin: 0 auto;
+    padding: 7vh 0;
+}
+
+.top-overview-section {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.top-overview-section-grid {
+    width: 50%;
+}
+
+.top-overview-section-grid.l {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 45%;
+}
+.top-overview-section-grid.l .text{
+width: 80%;
+}
+.top-overview-section-grid.r {
+    position: relative; /* default */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heading.o {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Libre Baskerville", serif;
+    margin: 0;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    word-spacing: 0.2rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+.over-view-top-grid {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact{
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo-icon {
+    width: 230px;
+    height: 300px;
+    filter: invert(1);
+    transition: all 0.3s ease;
+}
+.logo-icon.fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.overview-bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+}
+
+.bottom-grid {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.bottom-grid .bullet-text{
+    width: 80%;
+}
+.over-view-top-grid .bullet-text{
+    width: 80%;
+}
+.bottom-grid .text{
+    width: 80%;
+}
+.bullet-text {
+  font-size: 10px;
+  font-weight: 100;
+  color: #fff;
+  line-height: 1.4em;
+  word-spacing: -0.02rem;
+  text-align: justify;
+  padding-left: 0px;
+  margin: 0;
+  list-style: none; /* remove default bullets so we can style them ourselves */
+
+}
+
+.bullet-text li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 15px; /* space for bullet */
+}
+.bullet-text li span{
+  font-weight: 600;
+}
+.dark{
+    font-weight: 600;
+}
+
+.bullet-text li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #ffffff; /* white bullet */
+  font-size: 14px;
+  line-height: 1;
+}
+
+.bottom-grid-last-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0vh;
+}
+
+.bottom-last-section-grid {
+    width: 35%;
+    padding: 0px 20px;
+}
+
+.footer-section {
+    width: 100%;
+    color: #ffffff;
+    /* black text since you don't want background */
+    margin: 0 auto;
+}
+
+@media (max-width: 767px){
+    .over-view-body {
+    width: 100%;
+    gap: 8vh;
+    padding: 2vh 0;
+}
+.heading.o{
+font-size: 30px;
+}
+.top-overview-section {
+   padding: 0px 20px;
+   display: flex;
+   flex-direction: column;
+   flex-direction: column-reverse;
+   gap: 8vh;
+}
+.top-overview-section-grid {
+    width: 100%;
+}
+.top-overview-section-grid.l {
+text-align: left;
+    width: 100%;
+}
+.top-overview-section-grid.l .text{
+width: 100%;
+ word-spacing: -0.05rem;
+}
+.overview-bottom-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 8vh;
+}
+.bottom-grid {
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+}
+.bottom-grid .bullet-text{
+    width: 100%;
+}
+.bottom-grid .bullet-text{
+    width: 100%;
+}
+.over-view-top-grid .bullet-text{
+    width: 100%;
+}
+.bottom-grid .text{
+    width: 100%;
+     word-spacing: -0.05rem;
+}
+.bottom-grid-last-section {
+    padding-top: 0vh;
+}
+
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .top-overview-section-grid.l {
+    width: 75%;
+}
+.top-overview-section-grid.r {
+    width: 25%;
+}
+.logo-icon {
+    width: 180px;
+    height: 200px;
+}
+.heading.o {
+    font-size: 30px;
+}
+.bottom-grid {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+   .top-sectiion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-section {
+        width: 100%;
+    }
+    .footer-top {
+        gap: 15px;
+    }
+    .over-view-body {
+    width: 90%;
+}
+.footer{
+    padding: 0px;
+}
+}
