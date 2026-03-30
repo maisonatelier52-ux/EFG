@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Meta Data -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="EGS Capital Limited">
-    <meta http-equiv="Content-Language" content="en">
+  <!-- Basic Meta Data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="EGS Capital Limited">
+  <meta http-equiv="Content-Language" content="en">
 
-    <!-- SEO Meta -->
-    <title>EFG Capital Limited | Global Investment & Advisory Firm</title>
-   
+  <!-- SEO Meta -->
+  <title>EFG Capital Limited | Global Investment & Advisory Firm</title>
 
-    <!-- Structured Data (Organization Schema) -->
-    <script type="application/ld+json">
+
+  <!-- Structured Data (Organization Schema) -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -37,8 +37,8 @@
   }
   </script>
 
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -53,523 +53,577 @@
   }
   </script>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./responsive.css">
-    <link rel="stylesheet" href="./font.css">
-    <style>
-  /* Container (fixed overlay; does not push/shift layout) */
-  #egs-important-notice.egs-notice {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    /* bottom: 0; */
-    width: min(83%, 100vw);
-    z-index: 99999;
-    box-sizing: border-box;
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="stylesheet" href="./font.css">
+  <style>
+    /* Container (fixed overlay; does not push/shift layout) */
+    #egs-important-notice.egs-notice {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      /* bottom: 0; */
+      width: min(83%, 100vw);
+      z-index: 99999;
+      box-sizing: border-box;
 
-    /* Hidden state (slide below viewport) */
-    transform: translate(-50%, -50%) scale(0.9);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 280ms ease, opacity 280ms ease;
+      /* Hidden state (slide below viewport) */
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 280ms ease, opacity 280ms ease;
 
-  background: rgba(12, 12, 12, 0.94);
-    
-    
-  }
+      background: rgba(12, 12, 12, 0.94);
 
-  /* Visible state */
-  #egs-important-notice.egs-notice.egs-notice--visible {
-   transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    pointer-events: auto;
-    
-  }
 
-  /* Panel styling */
-  #egs-important-notice .egs-notice__panel {
-    position: relative;
-    /* background: rgba(12, 12, 12, 0.94); */
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 14px 14px 0 0;
-    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+    }
 
-    padding: 18px 18px calc(14px + env(safe-area-inset-bottom));
-    /* “Bottom half” behaviour */
-     max-height: 100vh;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 50px 50px 30px;
-     
-  }
+    /* Visible state */
+    #egs-important-notice.egs-notice.egs-notice--visible {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      pointer-events: auto;
 
-  #egs-important-notice .egs-notice__title {
-    margin: 0 40px 10px 0;
-    font-size: 28px;
-    font-weight: 650;
-    padding-bottom: 10px;
-    letter-spacing: 0.2px;
-     font-family: "Avenir", sans-serif;
-  }
+    }
 
-  #egs-important-notice .egs-notice__body p {
-    margin: 0 0 10px;
-    font-size: 14px;
-    line-height: 2.2;
-    font-family: "Avenir", sans-serif;
-    font-size: 12.9px;
-    margin: 0;
-    color: #d7d7d7;
-    font-weight: 100;
-    word-spacing: -0.06rem;
-  }
+    /* Panel styling */
+    #egs-important-notice .egs-notice__panel {
+      position: relative;
+      /* background: rgba(12, 12, 12, 0.94); */
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 14px 14px 0 0;
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
 
-  #egs-important-notice .egs-notice__body a {
-    color: inherit;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    font-family: "Avenir", sans-serif;
-  }
+      padding: 18px 18px calc(14px + env(safe-area-inset-bottom));
+      /* “Bottom half” behaviour */
+      max-height: 100vh;
+      overflow: hidden;
+      border-radius: 10px;
+      padding: 50px 50px 30px;
 
-  /* Close (X) */
-  #egs-important-notice .egs-notice__x {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    }
 
-    width: 40px;
-    height: 40px;
-    border: 0;
-    border-radius: 10px;
-    cursor: pointer;
-
-    background: transparent;
-    color: inherit;
-    font-size: 26px;
-    line-height: 1;
-  }
-
-  #egs-important-notice .egs-notice__x:focus-visible,
-  #egs-important-notice .egs-notice__btn:focus-visible {
-    outline: 2px solid rgba(255, 255, 255, 0.9);
-    outline-offset: 2px;
-  }
-
-  /* Actions */
-  #egs-important-notice .egs-notice__actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-
-    margin-top: 8px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-  }
-
-  #egs-important-notice .egs-notice__btn {
-    appearance: none;
-    border: 0;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 10px 12px;
-
-    background: #ffffff;
-    color: #000000;
-    font-size: 14px;
-    font-weight: 100;
+    #egs-important-notice .egs-notice__title {
+      margin: 0 40px 10px 0;
+      font-size: 28px;
+      font-weight: 650;
+      padding-bottom: 10px;
+      letter-spacing: 0.2px;
       font-family: "Avenir", sans-serif;
-  }
+    }
 
-  /* Reduce motion */
-  @media (prefers-reduced-motion: reduce) {
-    /* #egs-important-notice.egs-notice {
+    #egs-important-notice .egs-notice__body p {
+      margin: 0 0 10px;
+      font-size: 14px;
+      line-height: 2.2;
+      font-family: "Avenir", sans-serif;
+      font-size: 12.9px;
+      margin: 0;
+      color: #d7d7d7;
+      font-weight: 100;
+      word-spacing: -0.06rem;
+    }
+
+    #egs-important-notice .egs-notice__body a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-family: "Avenir", sans-serif;
+    }
+
+    /* Close (X) */
+    #egs-important-notice .egs-notice__x {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+
+      background: transparent;
+      color: inherit;
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    #egs-important-notice .egs-notice__x:focus-visible,
+    #egs-important-notice .egs-notice__btn:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.9);
+      outline-offset: 2px;
+    }
+
+    /* Actions */
+    #egs-important-notice .egs-notice__actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+
+      margin-top: 8px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    #egs-important-notice .egs-notice__btn {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 10px 12px;
+
+      background: #ffffff;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 100;
+      font-family: "Avenir", sans-serif;
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce) {
+      /* #egs-important-notice.egs-notice {
       transition: none;
     } */
-  }
-  @media (max-width: 480px) {
+    }
+
+    @media (max-width: 480px) {
       #egs-important-notice.egs-notice {
         background: rgba(3, 3, 3, 0.94);
       }
-     #egs-important-notice .egs-notice__title {
-    margin: 0 0px 10px 0;
-    font-size: 20px;
-    font-weight: 650;
-    padding-bottom: 10px;
-    letter-spacing: 0.2px;
-    font-family: "Avenir", sans-serif;
-}
-#egs-important-notice .egs-notice__body p {
-    margin: 0 0 10px;
-    font-size: 10px;
-    line-height: 1.5;
-    font-family: "Avenir", sans-serif;
-    font-size: 12.9px;
-    margin: 0;
-    color: #d7d7d7;
-    font-weight: 100;
-    word-spacing: -0.06rem;
-}
-#egs-important-notice .egs-notice__panel {
-    position: relative;
-    /* background: rgba(12, 12, 12, 0.94); */
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 14px 14px 0 0;
-    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
-    padding: 18px 18px calc(14px + env(safe-area-inset-bottom));
-    max-height: 100vh;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 50px 20px 20px;
-}
-  #egs-important-notice .egs-notice__actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
 
-    margin-top: 8px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-  }
-    #egs-important-notice .egs-notice__btn {
-    appearance: none;
-    border: 0;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 8px 10px;
+      #egs-important-notice .egs-notice__title {
+        margin: 0 0px 10px 0;
+        font-size: 20px;
+        font-weight: 650;
+        padding-bottom: 10px;
+        letter-spacing: 0.2px;
+        font-family: "Avenir", sans-serif;
+      }
 
-    background: #ffffff;
-    color: #000000;
-    font-size: 12px;
-    font-weight: 100;
-      font-family: "Avenir", sans-serif;
-  }
-  }
-   /* logo index css */
-   html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-a {
-  text-decoration: none;
-  color: inherit;
-}
+      #egs-important-notice .egs-notice__body p {
+        margin: 0 0 10px;
+        font-size: 10px;
+        line-height: 1.5;
+        font-family: "Avenir", sans-serif;
+        font-size: 12.9px;
+        margin: 0;
+        color: #d7d7d7;
+        font-weight: 100;
+        word-spacing: -0.06rem;
+      }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+      #egs-important-notice .egs-notice__panel {
+        position: relative;
+        /* background: rgba(12, 12, 12, 0.94); */
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 14px 14px 0 0;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+        padding: 18px 18px calc(14px + env(safe-area-inset-bottom));
+        max-height: 100vh;
+        overflow: hidden;
+        border-radius: 10px;
+        padding: 50px 20px 20px;
+      }
 
-.index-body {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:space-around;  
-}
+      #egs-important-notice .egs-notice__actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
 
-.home-logo {
-  width: 100%;
-  height: 100px;
-}
+        margin-top: 8px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
 
-.country-section {
-  position: absolute;
-  bottom: 10vh;         /* push a little above bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-evenly;
-  /* width: 100%; */
-  gap: 80px;
-}
+      #egs-important-notice .egs-notice__btn {
+        appearance: none;
+        border: 0;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 8px 10px;
 
-.country {
-  font-size: 12px;
-  font-weight: 400;
-  margin: 0;
-  color: #979797;
-  text-transform: uppercase;
-}
+        background: #ffffff;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 100;
+        font-family: "Avenir", sans-serif;
+      }
+    }
 
+    /* logo index css */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
 
-/* mobile-view */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-@media (max-width: 767px) {
-     html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Prevent scrolling */
-  }
-.index-body {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Centers logo vertically */
-  }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    .top-video-file {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .top-video-file video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .main-content-section {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.2);
+      /* Optional: slight overlay for readability */
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 1.5s ease-in-out;
+      z-index: 10;
+    }
+
+    .main-content-section.content-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .index-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
     .home-logo {
-  height: auto;
-  width: 280px;
-  margin: 0 auto;
-}
-  .country-section {
-    position: absolute;
-    bottom: 10vh; 
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    gap: 15px;
-  }
+      max-width: 550px;
+      width: 75%;
+      height: auto;
+      margin-bottom: 40px;
+    }
 
-  .country {
-    font-size: 12px;
-  }
-}
- 
-</style>
+    .country-section {
+      display: flex;
+      justify-content: center;
+      gap: 55px;
+    }
+
+    .country {
+      font-size: 10.5px;
+      font-weight: 350;
+      margin: 0;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2.3px;
+      transition: opacity 0.3s ease;
+    }
+
+    .country:hover {
+      opacity: 0.7;
+    }
+
+
+    /* mobile-view */
+
+    @media (max-width: 767px) {
+      .home-logo {
+        width: 215px;
+      }
+
+      .country-section {
+        gap: 18px;
+        flex-wrap: wrap;
+        width: 88%;
+        margin: 0 auto;
+      }
+
+      .country {
+        font-size: 9.3px;
+        letter-spacing: 1.3px;
+      }
+    }
+  </style>
 </head>
 
 
 <body>
-    <!-- top-video-file -->
-    <div class="top-video-file">
-        <video autoplay muted playsinline preload="auto">
-            <source src="./images/file.mp4" type="video/mp4">
-        </video>
+  <!-- top-video-file -->
+  <div class="top-video-file">
+    <video id="introVideo" autoplay muted playsinline preload="auto">
+      <source src="./images/file.mp4" type="video/mp4">
+    </video>
+  </div>
 
+
+  <!-- main-content-section -->
+  <div class="main-content-section" id="mainContent">
+    <div class="index-body">
+      <a href="home.html"><img src="./images/EFG.png" class="home-logo"></a>
+      <div class="country-section">
+        <h1 class="country"><a href="home.html">Home</a></h1>
+        <h2 class="country"><a href="home.html">About Us</a></h2>
+        <h2 class="country"><a href="expertise.html">Expertise</a></h2>
+        <h2 class="country"><a href="contact.html">contact us</a></h2>
+      </div>
     </div>
-   
+  </div>
 
-    <!-- main-content-section -->
-    <div class="main-content-section">
-          <div class="index-body">
-            <a href="home.html"><img src="./images/EFG.png" class="home-logo"></a>
-            <div class="country-section">
-                <h1 class="country"><a href="home.html">Home</a></h1>
-                <h2 class="country"><a href="home.html">About Us</a></h2>
-                <h2 class="country"><a href="expertise.html">Expertise</a></h2>
-                <h2 class="country"><a href="contact.html">contact us</a></h2>
-            </div>
-        </div>
-    </div>
+  <!-- Script to handle video end and reveal content -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const video = document.getElementById("introVideo");
+      const content = document.getElementById("mainContent");
 
-<!--  -->
-        <script>
+      if (!video || !content) return;
+
+      function revealContent() {
+        if (!content.classList.contains("content-visible")) {
+          content.classList.add("content-visible");
+        }
+      }
+
+      // Show content when video ends
+      video.addEventListener("ended", revealContent);
+
+      // Show content if video fails to load
+      video.addEventListener("error", revealContent);
+
+      // Fallback: If video is taking too long (e.g. 7s), reveal content anyway
+      // This handles cases where video is long but user wants to see the menu
+      setTimeout(revealContent, 7000);
+
+      // If video is already ended or can't play, reveal
+      if (video.ended) {
+        revealContent();
+      }
+    });
+  </script>
+
+
+  <!--  -->
+  <script>
     // Redirect when clicking anywhere on the body, except if the click is on an <a> tag
     document.body.addEventListener("click", function (e) {
-        // Check if the clicked element is NOT inside an <a> tag
-        if (!e.target.closest("a")) {
-            window.location.href = "./home";
-        }
+      // Check if the clicked element is NOT inside an <a> tag
+      if (!e.target.closest("a")) {
+        window.location.href = "./home";
+      }
     });
-</script>
-<!--  -->
+  </script>
+  <!--  -->
 
 
-    <script src="./script.js"></script>
-     <script>
-(function () {
-  'use strict';
+  <script src="./script.js"></script>
+  <script>
+    (function () {
+      'use strict';
 
-  /**
-   * CONFIG
-   * - MIN_DELAY_MS_FROM_NAV_START: ~9s after page navigation begins (not after snippet loads)
-   * - Video logic: waits for the intro video to END or to become PAUSED after it has played
-   */
-  var MIN_DELAY_MS_FROM_NAV_START = 9000;  // ~9 seconds
-  var MAX_WAIT_FOR_VIDEO_MS = 20000;       // fallback if video never ends/pauses
+      /**
+       * CONFIG
+       * - MIN_DELAY_MS_FROM_NAV_START: ~9s after page navigation begins (not after snippet loads)
+       * - Video logic: waits for the intro video to END or to become PAUSED after it has played
+       */
+      var MIN_DELAY_MS_FROM_NAV_START = 9000;  // ~9 seconds
+      var MAX_WAIT_FOR_VIDEO_MS = 20000;       // fallback if video never ends/pauses
 
-  /**
-   * Dismissal persistence:
-   * - Set DISMISS_DAYS = 0 to show on every visit (no persistence)
-   * - Set DISMISS_DAYS = 1 to hide for 1 day after closing, etc.
-   */
-  var DISMISS_DAYS = 1;
-  var STORAGE_KEY = 'egs_important_notice_dismissed_until';
+      /**
+       * Dismissal persistence:
+       * - Set DISMISS_DAYS = 0 to show on every visit (no persistence)
+       * - Set DISMISS_DAYS = 1 to hide for 1 day after closing, etc.
+       */
+      var DISMISS_DAYS = 1;
+      var STORAGE_KEY = 'egs_important_notice_dismissed_until';
 
-  var notice = document.getElementById('egs-important-notice');
-  if (!notice) return;
+      var notice = document.getElementById('egs-important-notice');
+      if (!notice) return;
 
-  function now() { return Date.now(); }
-  function msDays(days) { return days * 24 * 60 * 60 * 1000; }
+      function now() { return Date.now(); }
+      function msDays(days) { return days * 24 * 60 * 60 * 1000; }
 
-  function isDismissed() {
-    try {
-      if (DISMISS_DAYS <= 0) return false;
-      var until = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
-      return until && now() < until;
-    } catch (e) {
-      return false;
-    }
-  }
-
-  function setDismissed() {
-    try {
-      if (DISMISS_DAYS > 0) {
-        localStorage.setItem(STORAGE_KEY, String(now() + msDays(DISMISS_DAYS)));
-      }
-    } catch (e) {}
-  }
-
-  function show() {
-    if (notice.classList.contains('egs-notice--visible')) return;
-    notice.classList.add('egs-notice--visible');
-    notice.setAttribute('aria-hidden', 'false');
-
-    // Optional: move focus to the close/ack button (does not scroll)
-    var btn = notice.querySelector('[data-egs-notice-close]');
-    if (btn && typeof btn.focus === 'function') btn.focus({ preventScroll: true });
-  }
-
-  function hide() {
-    notice.classList.remove('egs-notice--visible');
-    notice.setAttribute('aria-hidden', 'true');
-  }
-
-  function close() {
-    hide();
-    setDismissed();
-  }
-
-  // Close interactions
-  notice.addEventListener('click', function (e) {
-    var t = e.target;
-    if (!t) return;
-
-    if (t.matches('[data-egs-notice-close]') || t.matches('.egs-notice__x')) {
-      e.preventDefault();
-      close();
-    }
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && notice.classList.contains('egs-notice--visible')) close();
-  });
-
-  function delay(ms) {
-    return new Promise(function (res) { setTimeout(res, ms); });
-  }
-
-  // Wait until N ms after navigation start (not after snippet injection)
-  function delayUntil(msFromNavStart) {
-    var perfNow = (window.performance && typeof window.performance.now === 'function')
-      ? window.performance.now()
-      : 0;
-    var remaining = Math.max(0, msFromNavStart - perfNow);
-    return delay(remaining);
-  }
-
-  /**
-   * VIDEO TARGETING
-   * If you can identify the hero video element, replace findIntroVideo()
-   * with a precise selector (recommended), e.g.:
-   *   return document.querySelector('#heroVideo');
-   */
-  function findIntroVideo() {
-    return document.querySelector('video[autoplay], header video, .hero video, video');
-  }
-
-  function waitForVideoElement(maxWaitMs) {
-    return new Promise(function (resolve) {
-      var v = findIntroVideo();
-      if (v) return resolve(v);
-
-      var start = now();
-      var poll = setInterval(function () {
-        var candidate = findIntroVideo();
-        if (candidate) {
-          clearInterval(poll);
-          resolve(candidate);
-        } else if (now() - start >= maxWaitMs) {
-          clearInterval(poll);
-          resolve(null);
-        }
-      }, 250);
-    });
-  }
-
-  function waitForVideoToStop(video, timeoutMs) {
-    return new Promise(function (resolve) {
-      if (!video) return resolve('no-video');
-
-      // Already stopped?
-      if (video.ended) return resolve('ended');
-      if (video.paused && video.currentTime > 0.5) return resolve('paused');
-
-      var hasPlayed = false;
-
-      function done(reason) {
-        cleanup();
-        resolve(reason);
-      }
-
-      function onPlaying() { hasPlayed = true; }
-      function onEnded() { done('ended'); }
-      function onPause() {
-        // Only treat pause as "stop" if it previously played
-        if (hasPlayed && video.currentTime > 0.5) done('paused');
-      }
-
-      function onTimeUpdate() {
-        // Safety: if currentTime reaches duration (near-end), treat as stopped
-        if (video.duration && !isNaN(video.duration) && video.currentTime >= (video.duration - 0.15)) {
-          done('near-end');
+      function isDismissed() {
+        try {
+          if (DISMISS_DAYS <= 0) return false;
+          var until = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
+          return until && now() < until;
+        } catch (e) {
+          return false;
         }
       }
 
-      function cleanup() {
-        video.removeEventListener('playing', onPlaying);
-        video.removeEventListener('ended', onEnded);
-        video.removeEventListener('pause', onPause);
-        video.removeEventListener('timeupdate', onTimeUpdate);
-        clearTimeout(t);
+      function setDismissed() {
+        try {
+          if (DISMISS_DAYS > 0) {
+            localStorage.setItem(STORAGE_KEY, String(now() + msDays(DISMISS_DAYS)));
+          }
+        } catch (e) { }
       }
 
-      video.addEventListener('playing', onPlaying);
-      video.addEventListener('ended', onEnded, { once: true });
-      video.addEventListener('pause', onPause);
-      video.addEventListener('timeupdate', onTimeUpdate);
+      function show() {
+        if (notice.classList.contains('egs-notice--visible')) return;
+        notice.classList.add('egs-notice--visible');
+        notice.setAttribute('aria-hidden', 'false');
 
-      var t = setTimeout(function () { done('timeout'); }, timeoutMs);
-    });
-  }
+        // Optional: move focus to the close/ack button (does not scroll)
+        var btn = notice.querySelector('[data-egs-notice-close]');
+        if (btn && typeof btn.focus === 'function') btn.focus({ preventScroll: true });
+      }
 
-  function init() {
-    if (isDismissed()) return;
+      function hide() {
+        notice.classList.remove('egs-notice--visible');
+        notice.setAttribute('aria-hidden', 'true');
+      }
 
-    Promise.all([
-      // Never show earlier than ~9 seconds after navigation start
-      delayUntil(MIN_DELAY_MS_FROM_NAV_START),
+      function close() {
+        hide();
+        setDismissed();
+      }
 
-      // Wait for intro video to stop (ended/paused). If no video exists (or never stops), we still proceed.
-      waitForVideoElement(5000).then(function (video) {
-        return waitForVideoToStop(video, MAX_WAIT_FOR_VIDEO_MS);
-      })
-    ]).then(show);
-  }
+      // Close interactions
+      notice.addEventListener('click', function (e) {
+        var t = e.target;
+        if (!t) return;
 
-  // Run reliably regardless of where snippet is injected
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
-</script>
+        if (t.matches('[data-egs-notice-close]') || t.matches('.egs-notice__x')) {
+          e.preventDefault();
+          close();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && notice.classList.contains('egs-notice--visible')) close();
+      });
+
+      function delay(ms) {
+        return new Promise(function (res) { setTimeout(res, ms); });
+      }
+
+      // Wait until N ms after navigation start (not after snippet injection)
+      function delayUntil(msFromNavStart) {
+        var perfNow = (window.performance && typeof window.performance.now === 'function')
+          ? window.performance.now()
+          : 0;
+        var remaining = Math.max(0, msFromNavStart - perfNow);
+        return delay(remaining);
+      }
+
+      /**
+       * VIDEO TARGETING
+       * If you can identify the hero video element, replace findIntroVideo()
+       * with a precise selector (recommended), e.g.:
+       *   return document.querySelector('#heroVideo');
+       */
+      function findIntroVideo() {
+        return document.querySelector('video[autoplay], header video, .hero video, video');
+      }
+
+      function waitForVideoElement(maxWaitMs) {
+        return new Promise(function (resolve) {
+          var v = findIntroVideo();
+          if (v) return resolve(v);
+
+          var start = now();
+          var poll = setInterval(function () {
+            var candidate = findIntroVideo();
+            if (candidate) {
+              clearInterval(poll);
+              resolve(candidate);
+            } else if (now() - start >= maxWaitMs) {
+              clearInterval(poll);
+              resolve(null);
+            }
+          }, 250);
+        });
+      }
+
+      function waitForVideoToStop(video, timeoutMs) {
+        return new Promise(function (resolve) {
+          if (!video) return resolve('no-video');
+
+          // Already stopped?
+          if (video.ended) return resolve('ended');
+          if (video.paused && video.currentTime > 0.5) return resolve('paused');
+
+          var hasPlayed = false;
+
+          function done(reason) {
+            cleanup();
+            resolve(reason);
+          }
+
+          function onPlaying() { hasPlayed = true; }
+          function onEnded() { done('ended'); }
+          function onPause() {
+            // Only treat pause as "stop" if it previously played
+            if (hasPlayed && video.currentTime > 0.5) done('paused');
+          }
+
+          function onTimeUpdate() {
+            // Safety: if currentTime reaches duration (near-end), treat as stopped
+            if (video.duration && !isNaN(video.duration) && video.currentTime >= (video.duration - 0.15)) {
+              done('near-end');
+            }
+          }
+
+          function cleanup() {
+            video.removeEventListener('playing', onPlaying);
+            video.removeEventListener('ended', onEnded);
+            video.removeEventListener('pause', onPause);
+            video.removeEventListener('timeupdate', onTimeUpdate);
+            clearTimeout(t);
+          }
+
+          video.addEventListener('playing', onPlaying);
+          video.addEventListener('ended', onEnded, { once: true });
+          video.addEventListener('pause', onPause);
+          video.addEventListener('timeupdate', onTimeUpdate);
+
+          var t = setTimeout(function () { done('timeout'); }, timeoutMs);
+        });
+      }
+
+      function init() {
+        if (isDismissed()) return;
+
+        Promise.all([
+          // Never show earlier than ~9 seconds after navigation start
+          delayUntil(MIN_DELAY_MS_FROM_NAV_START),
+
+          // Wait for intro video to stop (ended/paused). If no video exists (or never stops), we still proceed.
+          waitForVideoElement(5000).then(function (video) {
+            return waitForVideoToStop(video, MAX_WAIT_FOR_VIDEO_MS);
+          })
+        ]).then(show);
+      }
+
+      // Run reliably regardless of where snippet is injected
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 
 
 </body>

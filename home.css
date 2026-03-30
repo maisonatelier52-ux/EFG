@@ -550,7 +550,7 @@ a {
 }
 
 .company-overview-text {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 200;
   text-transform: uppercase;
   font-family: "Libre Baskerville", serif;
@@ -882,8 +882,6 @@ a {
   flex-direction: column;
   gap: 5px;
   width: 50%;
-  padding-left: 30px;
-  border-left: 2px solid #ffffff;
 }
 
 .institutional-grid-head {
