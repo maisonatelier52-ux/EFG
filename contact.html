@@ -138,15 +138,28 @@
             position: relative;
             z-index: 2;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
         }
 
         .top-overview-section-grid.c {
-            width: 40%;
+            width: 100%;
+            max-width: 500px;
             display: flex;
             flex-direction: column;
             gap: 15px;
-            margin-top: 90px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .top-overview-section-grid.c h2,
+        .top-overview-section-grid.c p {
+            text-align: center;
+            width: 100%;
+        }
+
+        .over-view-top-grid {
+            text-align: center;
+            width: 100%;
         }
 
         /* Ensure contact form label visibility */
@@ -184,48 +197,50 @@
                     <div class="over-view-top-grid">
                         <h1 style="color:black; display: none;">Contact EGS Capital Limited – Global Investment Advisory
                         </h1>
-                        <h2 class="heading o"><a title="link" href="#">Contact us</a></h2>
+                        <h2 class=" o"><a title="link" href="#">Contact us</a></h2>
                         <p class="text h"><a title="link" href="#">For Professional Clients and Market Counterparties
                                 only</a></p>
                     </div>
 
                     <form id="userForm" class="form-section">
-                    <div class="form-group">
-                        <label for="fullName">Name in Full</label>
-                        <input type="text" id="fullName" name="fullName" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="^[0-9]{10}$" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="enquiry" class="enquiry">Enquiry</label>
-                        <textarea id="enquiry" name="enquiry" maxlength="500" rows="4" required></textarea>
-                    </div>
-
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="consent" name="consent" class="check-box-section" required>
-                            I confirm that I am a Professional Client / Market Counterparty.
-                        </label>
-                    </div>
-
-                    <div class="form-footer-inline">
-                        <div class="form-footer-text">
-                            <p class="text" style="font-size: 9px;"><a title="link" href="#">All submissions are subject to internal review.</a></p>
-                            <p class="text" style="font-size: 9px;"><a title="link" href="#">Only relevant introductions will receive a response.</a></p>
+                        <div class="form-group">
+                            <label for="fullName">Name in Full</label>
+                            <input type="text" id="fullName" name="fullName" required>
                         </div>
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-                <p id="submissionMessage" class="submission-message" style="display: none;">Done..!</p>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="^[0-9]{10}$" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiry" class="enquiry">Enquiry</label>
+                            <textarea id="enquiry" name="enquiry" maxlength="500" rows="4" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" class="check-box-section" required>
+                                I confirm that I am a Professional Client / Market Counterparty.
+                            </label>
+                        </div>
+
+                        <div class="form-footer-inline">
+                            <div class="form-footer-text">
+                                <p class="text" style="font-size: 9px;"><a title="link" href="#">All submissions are
+                                        subject to internal review.</a></p>
+                                <p class="text" style="font-size: 9px;"><a title="link" href="#">Only relevant
+                                        introductions will receive a response.</a></p>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <p id="submissionMessage" class="submission-message" style="display: none;">Done..!</p>
                 </div>
             </div>
         </div>
