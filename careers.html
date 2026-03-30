@@ -108,141 +108,163 @@
   <link rel="stylesheet" href="./expertise.css">
   <link rel="stylesheet" href="./font.css">
   <style>
-    .careers {
-      background-color: black;
+    .careers-section-wrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
-    .careers-wrapper {
-      max-width: 1050px;
+    .careers-section-wrapper .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .constrained-container {
+      width: 82%;
       margin: 0 auto;
-      padding: 200px 0px;
-    }
-
-    /* ── TWO COLUMN GRID ── */
-    .careers-top {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-
-    /* LEFT COLUMN */
-    .careers-left {
+      position: relative;
+      z-index: 2;
       display: flex;
       flex-direction: column;
-      gap: 0px;
+      align-items: center;
+      text-align: center;
+      color: white;
     }
 
-    .careers-left-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 37px;
-      font-weight: 100;
+    .careers-content {
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .careers-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3.5rem;
+      font-weight: 400;
       color: white;
       line-height: 1.1;
+      margin-bottom: 10px;
     }
 
-    .careers-main-image {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-      aspect-ratio: 4 / 4.4;
-      background: #d0ccc8;
+    .careers-description {
+      font-size: 14px;
+      line-height: 1.8;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.9);
     }
 
-    /* RIGHT COLUMN — tightly stacked, no gap */
-    .careers-right {
-      display: flex;
+    .careers-cta {
+      margin-top: 30px;
+      display: inline-flex;
       flex-direction: column;
+      align-items: center;
+      gap: 8px;
     }
 
-    .careers-secondary-image {
+    .careers-cta-text {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+    }
+
+    .careers-cta-line {
+      height: 1px;
       width: 100%;
-      display: block;
-      object-fit: cover;
-      aspect-ratio: 4 / 3;
-      background: #d0ccc8;
+      background-color: white;
     }
 
-    .careers-secondary-caption {
-      font-family: 'EB Garamond', Georgia, serif;
-      font-size: 10.5px;
-      color: white;
-      font-style: italic;
-      line-height: 1.5;
-      margin-top: 6px;
-      margin-bottom: 12px;
+    /* Specific Backgrounds */
+    #section-culture {
+      background-image: url('images/dubai_opera.png');
     }
 
-    .careers-description-paragraph {
-
-      font-size: 11px;
-      line-height: 1.90;
-      color: white;
-      text-align: left;
+    #section-growth {
+      background-image: url('images/dubai_palm_aerial.png');
     }
 
-    .careers-description-paragraph+.careers-description-paragraph {
-      margin-top: 14px;
-    }
+    @media (max-width: 768px) {
+      .careers-title {
+        font-size: 2.5rem;
+      }
 
-    @media (max-width: 600px) {
-      .careers-top {
-        grid-template-columns: 1fr;
+      .careers-description {
+        font-size: 12px;
       }
     }
   </style>
 </head>
 
 <body class="careers">
+
+
   <div class="over-view-body">
     <nav class="main-navbar"></nav>
 
-    <div class="careers-wrapper">
-
-      <div class="careers-top">
-
-        <!-- LEFT: large title above image -->
-        <div class="careers-left">
-          <h1 class="careers-left-title">Careers</h1>
-          <img class="careers-main-image" src="images/egs.jpeg" alt="A vision painting" />
-        </div>
-
-        <!-- RIGHT: image → caption → description (no gap in between) -->
-        <div class="careers-right">
-          <img class="careers-secondary-image" src="images/Emirates Financial Group6.jpg"
-            alt="Le Dieu de la danse, 2023 painting" />
-          <p class="careers-secondary-caption">Le Dieu de la danse (2023)</p>
-          <p class="careers-description-paragraph">
-            The church's liminal energy does seem to emanate through Felice's
-            paintings—moody, sweat, sombre. Scenes glimpsed from a world that's
-            not quite real. The pictures he paints are familiar in the way that a
-            forgotten character from a once-read children's story is familiar: surreal,
-            ambiguous, with the sharp edge of folklore. "Most of the settings are
-            dreams," he explains. "The lawless creativity of dreams and the
-            subconscious are interesting to me." Animals come up often, as do
-            people with animals, though. "I don't know why, or what they mean," he
-            says. The work stays with you, long after you take away. Felice exhibits
-            often, and his paintings are collected by an audience that includes,
-            among them, lauded designer Jonathan Anderson.
+    <!-- Section 1 -->
+    <div class="careers-section-wrapper" id="section-culture">
+      <div class="overlay"></div>
+      <div class="constrained-container">
+        <div class="careers-content">
+          <h1 class="careers-title">Careers</h1>
+          <p class="careers-description">
+            The church's liminal energy does seem to emanate through Felice's paintings—moody, sweat, sombre. Scenes
+            glimpsed from a world that's not quite real. The pictures he paints are familiar in the way that a
+            forgotten character from a once-read children's story is familiar: surreal, ambiguous, with the sharp edge
+            of folklore. "Most of the settings are dreams," he explains. "The lawless creativity of dreams and the
+            subconscious are interesting to me." Animals come up often, as do people with animals, though. "I don't
+            know why, or what they mean," he says. The work stays with you, long after you take away. Felice exhibits
+            often, and his paintings are collected by an audience that includes, among them, lauded designer Jonathan
+            Anderson.
           </p>
-          <p class="careers-description-paragraph">
-            But the painting practice is one half of the whole. Felice is also a singer,
-            songwriter, and the frontman of the Felice Brothers, an American folk-
-            rock-country band from upstate New York founded in 2006. He returned
-            to painting when his son was born in 2017, then started making more
-            artwork when touring stopped during Covid. The music his band makes
-            is poetic, dark and lyrical, full of cinematic narratives about American life
-            that unfold slowly through the course of a song. The songs are written
-            here, too—Felice, cold though his hands are, is working on an album
-            right now.
-          </p>
+          <div class="careers-cta">
+            <span class="careers-cta-text">Join the team</span>
+            <span class="careers-cta-line"></span>
+          </div>
         </div>
-
       </div>
-
     </div>
+
+    <!-- Section 2 -->
+    <div class="careers-section-wrapper" id="section-growth">
+      <div class="overlay"></div>
+      <div class="constrained-container">
+        <div class="careers-content">
+          <h1 class="careers-title">Opportunities</h1>
+          <p class="careers-description">
+            But the painting practice is one half of the whole. Felice is also a singer, songwriter, and the frontman
+            of the Felice Brothers, an American folk-rock-country band from upstate New York founded in 2006. He
+            returned to painting when his son was born in 2017, then started making more artwork when touring stopped
+            during Covid. The music his band makes is poetic, dark and lyrical, full of cinematic narratives about
+            American life that unfold slowly through the course of a song. The songs are written here, too—Felice,
+            cold though his hands are, is working on an album right now.
+          </p>
+          <div class="careers-cta">
+            <span class="careers-cta-text">Exlpore Roles</span>
+            <span class="careers-cta-line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="footer-component"></div>
   </div>
+
   <script src="./components.js"></script>
 </body>
 

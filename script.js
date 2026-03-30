@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .forEach(el => observer.observe(el));
 });
 
-        document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.querySelector(".menu");
   const categorySectionB = document.querySelector(".category-section.b");
 

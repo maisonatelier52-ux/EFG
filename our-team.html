@@ -105,88 +105,172 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
-    <link rel="stylesheet" href="./commodities.css">
-    <link rel="stylesheet" href="./our-team.css">
     <link rel="stylesheet" href="./font.css">
-    <!-- <link rel="stylesheet" href="./footer-cateagory.css"> -->
+
+    <style>
+        .team-section-wrapper {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .team-section-wrapper .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .constrained-container {
+            width: 82%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            color: white;
+        }
+
+        .profile-info {
+            max-width: 650px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .profile-name {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .profile-bio {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .profile-bio p {
+            font-size: 13px;
+            line-height: 1.7;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .profile-bio p a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Specific Backgrounds */
+        #section-craig {
+            background-image: url('images/dubai_burj_alarab.png');
+        }
+
+        #section-ivan {
+            background-image: url('images/dubai_palm_aerial.png');
+        }
+
+        #section-usman {
+            background-image: url('images/dubai_fountains.png');
+        }
+
+        @media (max-width: 768px) {
+            .profile-name {
+                font-size: 2.5rem;
+            }
+
+            .profile-bio p {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="over-view-body">
         <nav class="main-navbar"></nav>
 
-        <div class="our-team-body-section">
-            <div class="over-view-top-grid">
-                <h1 style="color:black; display: none;">EGS Capital Limited our-team Team & Expert Professionals</h1>
-            </div>
-            <div class="leaders-section">
-                <div class="leader-profile-section" id="craig-rice">
-                    <div class="leader-profile-section-grid l">
-                        <div class="name-section">
-                            <p class="name"><a title="link" href="#">Lorem Ipsum</a></p>
-                            <img src="./images/eagle.jpeg" class="profile-pic m" alt="craig-rice">
-                        </div>
-                        <p class="text l"><a title="link" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
-                        <p class="text l"><a title="link" href="#">Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
-                        <p class="text l"><a title="link" href="#">Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
-                        <p class="text l"><a title="link" href="#">Excepteur sint occaecat cupidatat non proident, sunt
-                                in culpa qui officia deserunt mollit anim id est laborum.</a></p>
-                    </div>
-                    <div class="leader-profile-section-grid r">
-                        <img src="./images/eagle.jpeg" class="profile-pic" alt="craig-rice">
-                    </div>
-                </div>
-
-                <div class="leader-profile-section" id="ivan-mistretta">
-                    <div class="leader-profile-section-grid l">
-                        <div class="name-section">
-                            <p class="name"><a title="link" href="#">Lorem Ipsum</a></p>
-                            <img src="./images/eagle-img.jpeg" class="profile-pic b-m" alt="ivan">
-                        </div>
-                        <p class="text l"><a title="link" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
-                        <p class="text l"><a title="link" href="#">Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
-                        <p class="text l"><a title="link" href="#">Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur.</a></p>
-                        <p class="text l"><a title="link" href="#">Excepteur sint occaecat cupidatat non proident, sunt
-                                in culpa qui officia deserunt mollit anim id est laborum.</a></p>
-                        <p class="text l"><a title="link" href="#">Sed ut perspiciatis unde omnis iste natus error sit
-                                voluptatem accusantium doloremque laudantium.</a></p>
-                    </div>
-                    <div class="leader-profile-section-grid r">
-                        <img src="./images/eagle-img.jpeg" class="profile-pic b" alt="ivan">
-                    </div>
-                </div>
-
-                <div class="leader-profile-section" id="usman-basit">
-                    <div class="leader-profile-section-grid l">
-                        <div class="name-section">
-                            <p class="name"><a title="link" href="#">Lorem Ipsum</a></p>
-                            <img src="./images/calligraphy.png" class="profile-pic c-m" alt="menu">
-                        </div>
-                        <p class="text l"><a title="link" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.</a></p>
-                        <p class="text l"><a title="link" href="#">Sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.</a></p>
-                        <p class="text l"><a title="link" href="#">Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip.</a></p>
-                        <p class="text l"><a title="link" href="#">Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore.</a></p>
-                        <p class="text l"><a title="link" href="#">Excepteur sint occaecat cupidatat non proident.</a>
-                        </p>
-                        <p class="text l"><a title="link" href="#">Sunt in culpa qui officia deserunt mollit anim id est
-                                laborum.</a></p>
-                    </div>
-                    <div class="leader-profile-section-grid r">
-                        <img src="./images/calligraphy.png" class="profile-pic c" alt="usman">
+        <!-- Craig Rice Section -->
+        <div class="team-section-wrapper" id="section-craig">
+            <div class="overlay"></div>
+            <div class="constrained-container">
+                <div class="profile-info">
+                    <h1 class="profile-name">Craig Rice</h1>
+                    <div class="profile-bio">
+                        <p><a href="#">Senior Investment Strategist with over 15 years of experience in global equity
+                                markets and institutional portfolio management.</a></p>
+                        <p><a href="#">Specializes in macro-economic trend analysis and the development of data-driven
+                                investment frameworks for high-net-worth clients.</a></p>
+                        <p><a href="#">Previously led several multi-billion dollar hedge fund operations in London and
+                                New York, consistently delivering alpha across diverse market cycles.</a></p>
+                        <p><a href="#">Committed to transparency and the ethical application of advanced financial
+                                analytics in all client mandates at EFG Capital.</a></p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Ivan Mistretta Section -->
+        <div class="team-section-wrapper" id="section-ivan">
+            <div class="overlay"></div>
+            <div class="constrained-container">
+                <div class="profile-info">
+                    <h1 class="profile-name">Ivan Mistretta</h1>
+                    <div class="profile-bio">
+                        <p><a href="#">Managing Director focused on private equity and cross-border mergers and
+                                acquisitions within the EMEA and APAC regions.</a></p>
+                        <p><a href="#">Expert in identifying undervalued assets and guiding corporate turnarounds
+                                through strategic restructuring and capital infusion.</a></p>
+                        <p><a href="#">A recognized thought leader in sustainable investment practices, ensuring all EFG
+                                Capital deals meet rigorous ESG standards.</a></p>
+                        <p><a href="#">Maintains a prestigious network of global industrial partners, facilitating
+                                unique co-investment opportunities for our institutional clients.</a></p>
+                        <p><a href="#">Holds an MBA with a concentration in International Finance from a premier global
+                                business school.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usman Basit Section -->
+        <div class="team-section-wrapper" id="section-usman">
+            <div class="overlay"></div>
+            <div class="constrained-container">
+                <div class="profile-info">
+                    <h1 class="profile-name">Usman Basit</h1>
+                    <div class="profile-bio">
+                        <p><a href="#">Head of Financial Derivatives, specializing in complex risk-mitigation strategies
+                                and algorithmic volatility trading.</a></p>
+                        <p><a href="#">Develops proprietary hedging models that safeguard client assets during periods
+                                of extreme global market volatility.</a></p>
+                        <p><a href="#">Formerly a lead quant at a top-tier investment bank, bringing a rigorous
+                                mathematical approach to our derivative desk.</a></p>
+                        <p><a href="#">Oversees the execution of tailored hedging programs for corporate treasuries and
+                                large family offices.</a></p>
+                        <p><a href="#">Committed to constant innovation in financial technology to provide EFG Capital
+                                with a distinct competitive edge.</a></p>
+                        <p><a href="#">Dedicated mentor to the next generation of financial engineers and risk analysts
+                                in the Dubai office.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="footer-component"></div>
     </div>
     <script src="./components.js"></script>

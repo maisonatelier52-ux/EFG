@@ -695,7 +695,8 @@ a {
 
 .institutional-content2 {
   display: flex;
-
+  width: 82%;
+  margin: 0 auto;
   gap: 100px;
   transform: translateX(0%);
 }
@@ -706,7 +707,7 @@ a {
   gap: 5px;
   width: 50%;
   padding-left: 30px;
-  border-left: 2px solid #ffffff;
+  border-left: 1px solid #ffffff;
 }
 
 .institutional-grid2 p {
@@ -1028,6 +1029,7 @@ a {
   text-align: center;
   line-height: 1.2em;
   font-weight: 200;
+  font-size: 18px;
 }
 
 .team-grid-section {
