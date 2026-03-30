@@ -1,3 +1,42 @@
+/* Animation Keyframes */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reveal-left.active {
+  animation: fadeInLeft 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.reveal-right.active {
+  animation: fadeInRight 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
 body {
   margin: 0;
   padding: 0;
