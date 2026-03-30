@@ -12,18 +12,19 @@
   }
 
   .main-content-section {
-    height: 100vh;
-    padding: 100px 20px 40px;
-    /* space for fixed nav */
-    background: url("./images/Emirates Financial Group Background.png") center center / cover no-repeat;
+    min-height: 100vh;
+    padding: 120px 20px 60px;
+    background: url("./images/Emirates Financial Group13.jpg") center center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .main-content-section .third-section {
     width: 100%;
-    gap: 5vh;
+    margin: 0;
+    z-index: 2;
   }
 
   .footer-logos {
@@ -95,19 +96,20 @@
 
   .institutional-section2 {
     position: relative;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background: url(./images/Emirates-groups.jpg) center / cover no-repeat;
     color: white;
-    overflow: hidden;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    padding: 0 50px;
+    padding: 80px 20px;
+    box-sizing: border-box;
   }
 
   .experts-card {
-    width: 300px;
-    height: 200px;
+    width: 280px;
+    height: 180px;
   }
 
   .institutional-grid3 {
@@ -250,10 +252,24 @@
   .third-section-bottom-right {
     width: 100%;
     gap: 10px;
+    align-items: center;
+    /* Center arrow on mobile */
   }
 
   .egs-frame {
     display: none;
+  }
+
+  .overview-row {
+    align-items: center;
+    /* Center logo overview line on mobile */
+    text-align: center;
+  }
+
+  .company-line.b {
+    align-self: center;
+    /* Center the line */
+    width: 50%;
   }
 
   .length-arrow {
@@ -278,42 +294,45 @@
 
   /* institutional-section */
   .institutional-section {
-    height: 100vh;
-    padding: 50px 20px;
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
   }
 
   .institutional-section .overlay {
     height: 100%;
-    /* will still cover fully */
   }
 
   .heading.b {
-    font-size: 25px;
+    font-size: 24px;
     width: 100%;
-    padding-left: 30px;
-
+    padding-left: 0;
+    text-align: center;
   }
 
   .institutional-section1 .heading.b {
-    font-size: 25px;
+    font-size: 24px;
     width: 100%;
     padding-left: 0px;
-
+    text-align: center;
   }
 
   .institutional-grid {
-    width: 80%;
-    padding-left: 10px;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
   }
 
   .institutional-content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    transform: translateX(10%);
+    gap: 30px;
+    transform: none;
+    width: 100%;
   }
 
   .text {
@@ -332,7 +351,7 @@
 
   .institutional-section .content {
     padding: 30px 0px;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
   }
 
@@ -340,10 +359,23 @@
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     width: 100%;
+  }
+
+  .institutional-content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: none;
+  }
+
+  .institutional-grid1 {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
   }
 
   .body-content-grid {
@@ -417,33 +449,35 @@
   }
 
   .bottom-section1 {
-    gap: 10vh;
-    height: 100vh;
+    gap: 30px;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
   }
 
   .heading1 {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
     font-family: "Libre Baskerville", serif;
     margin: 0;
     color: #ffffff;
-    text-align: left;
-    letter-spacing: -0.05em;
-    line-height: 1.7rem;
-    text-align: right;
+    text-align: center;
+    letter-spacing: -0.02em;
+    line-height: 1.4rem;
   }
 
   .text1 {
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
     color: #d7d7d7;
     font-weight: 100;
-    line-height: 1rem;
-    text-align: right;
-    padding-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   .capital-section-top {
@@ -489,8 +523,9 @@
   .team-text.d {
     width: 100%;
     text-align: center;
-    font-size: 14px;
-    line-height: 1.2em;
+    font-size: 13px;
+    line-height: 1.5em;
+    font-weight: 300;
   }
 
   .footer {
@@ -572,8 +607,200 @@
     margin-top: 10px;
   }
 
-  .our-team-body-section {
-    padding: 30px;
+  .institutional-section3 {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px;
+    box-sizing: border-box;
+  }
+
+  .institutional-section3 .content {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .institutional-content3 {
+    gap: 40px;
+  }
+
+  .institutional-grid-head a {
+    font-size: 16px;
+  }
+
+  .institutional-grid2 {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  .institutional-grid3 {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 15px;
+  }
+
+  /* Membership Benefits responsive tweaks */
+  .section2-container {
+    padding: 60px 20px;
+  }
+
+  .section2-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .section2-benefit-card {
+    min-height: 140px;
+    padding: 20px;
+  }
+
+  .section2-card-head {
+    font-size: 16px;
+  }
+
+  .section2-card-title {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .experts-description {
+    font-size: 10px;
+    padding: 0 15px;
+  }
+
+  .section2-benefits-grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .section2-bottom-row {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Expertise & Approach Full-Screen Wrappers */
+  .expertise-wrapper,
+  .contact-wrapper,
+  .securities-wrapper {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 120px 20px 60px !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .expertise-content,
+  .constrained-container,
+  .securities-content,
+  .expertise-section-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    gap: 30px !important;
+  }
+
+  .expertise-title,
+  .securities-left-title {
+    font-size: 2.2rem !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .expertise-description,
+  .securities-description-paragraph {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Our Team Profiles Stacking */
+  .leader-profile-section {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 40px 0 !important;
+  }
+
+  .leader-profile-section-grid.l,
+  .leader-profile-section-grid.r {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .profile-pic {
+    width: 100% !important;
+    max-width: 320px;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  .profile-pic.m,
+  .profile-pic.b-m,
+  .profile-pic.c-m {
+    display: none !important;
+    /* Hide the mobile-only duplicates if any, use standard pics */
+  }
+
+  /* Securities Page Layout */
+  .securities-top,
+  .securities-bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .securities-right {
+    padding-top: 0 !important;
+  }
+
+  .securities-bottom-left {
+    display: none;
+  }
+
+  .name-section {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+
+  /* Careers & Sub-page layout */
+  .careers-wrapper {
+    padding: 100px 20px 60px !important;
+  }
+
+  .careers-top {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .careers-left-title {
+    font-size: 28px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Team Profile specific tweaks */
+  .leader-profile-section-grid.l {
+    order: 2;
+  }
+
+  .leader-profile-section-grid.r {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    max-height: 400px;
+    width: auto !important;
   }
 }
 
@@ -931,7 +1158,7 @@
 }
 
 .footer-logo.small {
-  height: 45px;
+  height: 85px;
   width: auto;
   padding-top: 10px;
   filter: none;

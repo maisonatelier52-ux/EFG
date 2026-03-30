@@ -8,6 +8,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -1077,4 +1078,58 @@ a {
 /* new inner pages */
 .contact {
   padding: 100px 0px 100px;
+}
+
+/* Global Mobile View Fixes (Shared Foundations) */
+@media (max-width: 767px) {
+  .footer-section {
+    width: 90% !important;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contact div,
+  .address,
+  .footer-contact .email,
+  .footer-contact .phone {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 8px;
+    line-height: 1.6;
+  }
+
+  .logo {
+    width: 240px !important;
+    height: auto !important;
+  }
+
+  .main-navbar {
+    padding: 10px 5% !important;
+  }
+
+  .constrained-container {
+    width: 92% !important;
+    margin: 0 auto !important;
+  }
+
+  .category-section {
+    display: none !important;
+  }
+
+  .menu {
+    display: block !important;
+    width: 25px;
+    height: auto;
+  }
 }
